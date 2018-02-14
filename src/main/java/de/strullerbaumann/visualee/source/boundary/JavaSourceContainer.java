@@ -64,6 +64,7 @@ public final class JavaSourceContainer {
          return;
       }
       if (!JAVASOURCES.containsKey(javaSource.getName())) {
+         System.out.println("->> Adding java source: " + javaSource.getName());
          JAVASOURCES.put(javaSource.getName(), javaSource);
       }
    }
